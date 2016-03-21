@@ -14,7 +14,7 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Base CSS for header and footer-->
-    <link href="css/template-style.css" rel="stylesheet">
+    <link href="css/application.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -25,34 +25,52 @@
 <body>
 
 <!-- Fixed navbar -->
-<nav class="navbar navbar-fixed-top">
-  <div class="row wraper">
-         <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5">
-            <div class="logo">
-                    <a href="http://texty.org.ua/">
-                        <img title="ТЕКСТИ.ORG.UA" alt="ТЕКСТИ.ORG.UA" class = "img-responsive" src="img/logo.png" height="25" width="203">
-                    </a>
-             </div>
-         </div>
-         <div class="col-lg-5 col-md-4 col-sm-4 col-xs-3">
-             <div class="dj_header"><a href="/pg/blog/infoviz">Журналістика даних</a></div>
-         </div>
-         <div class="col-lg-2 col-md-3 col-sm-3 col-xs-4">
-             <div class="social-icons">
-                <a href="https://twitter.com/home?status="
-                           target="_blank"><i class="fa fa-twitter fa-fw fa-2x"></i></a>
-                <a href="https://www.facebook.com/sharer/sharer.php?u="
-                           target="_blank"><i class="fa fa-facebook fa-fw fa-2x"></i></a>
-             </div>
-         </div>
-
+<nav class="">
+  <div class="col-lg-1 col-lg-offset-11 col-md-1 col-md-offset-11 col-sm-2 col-sm-offset-10 col-xs-2 col-xs-offset-10">
+    <div class="social-icons">
+      <a href="https://twitter.com/home?status="target="_blank"><i class="fa fa-twitter fa-fw fa-2x"></i></a>
+      <a href="https://www.facebook.com/sharer/sharer.php?u="target="_blank"><i class="fa fa-facebook fa-fw fa-2x"></i></a>
     </div>
-
 </nav>
 
 <!-- Your content here -->
-<div class="container">
- 
+<div class="container-fluid">
+  <div class="image">
+      <img id="background" src="img/railway_small.jpg" class="img-responsive" alt="railway">
+      <h1><span>Нехай живе Укрзалізниця!</span></h1>
+      <div class="svg-container">
+        <svg version="1.1" id="Layer_1" viewBox="0 0 1280 800" preserveAspectRatio="xMinYMin meet" class="svg-content" >
+        <polyline class="line" fill="none" stroke="#F77A52" stroke-width="6" stroke-miterlimit="10" points="199.75,0 199.75,66.25 134.75,66.25
+        	134.75,108.75 67.75,108.75 67.75,171.75 0,171.75 "/>
+        <polyline class="line2" fill="none" stroke="#332532" stroke-width="6" stroke-miterlimit="10" points="0,138.25 24.929,138.25 25.875,185.214
+        	56.75,185.25 56.75,216 24.215,215.929 23.836,298.497 112.5,298.5 "/>
+        <polyline class="line" fill="none" stroke="#F77A52" stroke-width="6" stroke-miterlimit="10" points="66.5,298.499 66.5,342.5 30.5,342.5
+        	30.5,407.5 0,407.5 "/>
+        <polyline class="line2" fill="none" stroke="#F77A52" stroke-width="6" stroke-miterlimit="10" points="1280,558 1221.5,558 1221.5,608
+        	1250.75,608 1250.75,739 1154.5,739 1154.5,768 1182.5,768 1182.5,800 "/>
+        <polyline class="line2" fill="none" stroke="#332532" stroke-width="6" stroke-miterlimit="10" points="1280,382.5 1204.5,382.5 1204.5,336.5
+        	1247.5,336.5 1247.5,473.5 1180.5,473.5 1180.5,580.5 1280,580.5 "/>
+        <polyline class="line2" fill="none" stroke="#332532" stroke-width="6" stroke-miterlimit="10" points="509.5,0 509.5,85.875 640,85.875
+        	640,109.5 875.5,109.5 875.5,27.5 1078.5,27.5 1078.5,-3.5 "/>
+        <polyline class="line"fill="none" stroke="#F77A52" stroke-width="6" stroke-miterlimit="10" points="1020.5,0 1020.5,149.5 1135.5,149.5
+        	1135.5,231.5 1269.5,231.5 1269.5,193.5 1280,193.5 "/>
+        </svg>
+    </div>
+      <div class="projects">
+      <div class="col-lg-4  col-md-4 col-sm-4 col-xs-12">
+        <img src="img/project1.png" class="img-responsive " alt="railway">
+        <h3> <span>Куди? </span></h3>
+      </div>
+      <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+        <img src="img/project2.png" class="img-responsive" alt="railway">
+        <h3> <span>Як? </span></h3>
+      </div>
+      <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+        <img src="img/project2.png" class="img-responsive" alt="railway">
+        <h3> <span>Хто? </span></h3>
+      </div>
+    </div>
+</div>
 </div>
 <!-- End of your content -->
 
