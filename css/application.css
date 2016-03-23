@@ -20,9 +20,10 @@ a {
 
 h1 {
   font-size: 3.5em;
-  line-height: 3.8em;
+  line-height: 0.8em;
   font-weight: bold;
-  color: #fff; }
+  color: #383e47;
+  margin-bottom: 0.5em; }
   @media (max-width: 768px) {
     h1 {
       font-size: 1.8em; } }
@@ -156,11 +157,8 @@ p {
   position: relative; }
 
 .social-icons {
-  position: absolute;
+  position: fixed;
   z-index: 1000; }
-
-.social-icons {
-  position: fixed; }
 
 .fa-twitter,
 .fa-facebook {
@@ -210,17 +208,23 @@ p {
   width: 100%; }
 
 h1 {
-  position: absolute;
   text-align: center;
-  top: 100px;
   left: 0;
   width: 100%; }
+  h1.maintitle {
+    position: absolute;
+    top: 150px; }
+  h1 span {
+    background: rgba(247, 122, 82, 0.7);
+    padding: 10px;
+    color: #fff; }
 
-h1 span {
-  background: #f77a52;
-  /* fallback color */
-  background: rgba(247, 122, 82, 0.7);
-  padding: 10px; }
+h2 {
+  text-align: center; }
+  h2 span {
+    background: rgba(247, 122, 82, 0.9);
+    padding: 7px;
+    color: #fff; }
 
 h3 {
   text-align: center; }
@@ -231,16 +235,52 @@ h3 span {
   background: rgba(51, 37, 50, 0.7);
   padding: 5px; }
 
-.line {
-  opacity: 0.7; }
+.loading-page {
+  padding-bottom: 15em; }
+
+p.fact {
+  margin-top: 3.5em; }
+  p.fact::first-letter {
+    float: left;
+    margin: 0 20px 0 0;
+    font-size: 52px;
+    font-weight: bold;
+    padding: 10px;
+    line-height: 1; }
+p span {
+  background: rgba(247, 122, 82, 0.5);
+  padding: 1px; }
 
 .line {
+  opacity: 0.7;
   -webkit-animation: 7s crazy infinite;
   animation: 7s crazy infinite; }
 
 .line2 {
   -webkit-animation: 11s crazy infinite;
   animation: 11s crazy infinite; }
+
+#train {
+  padding-top: 7em;
+  padding-bottom: 7em;
+  display: block;
+  margin: auto; }
+
+.row {
+  margin-left: 0;
+  margin-right: 0; }
+  .row.graphs {
+    margin-top: 7em;
+    margin-bottom: 7em; }
+
+.bold {
+  font-size: 3em;
+  font-family: 'Open Sans Condensed', sans-serif;
+  color: rgba(247, 122, 82, 0.9);
+  margin: 3em; }
+
+.last {
+  margin-bottom: 10em; }
 
 @-webkit-keyframes crazy {
   0% {

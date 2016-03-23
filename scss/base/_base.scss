@@ -25,7 +25,8 @@ a {
 
 
 h1 {
-  @include text(3.5em, 3.8em, bold, $white);
+  @include text(3.5em, 0.8em, bold, $main-text);
+  margin-bottom: 0.5em;
   @media #{$brk-narrow} {
     font-size: 1.8em;
   }
