@@ -176,17 +176,7 @@ p {
   opacity: 0.9; }
 
 .projects {
-  position: absolute;
-  top: 300px;
-  width: 100%;
-  padding-left: 20%;
-  padding-right: 20%; }
-  @media (max-width: 768px) {
-    .projects {
-      position: relative; } }
-  @media (max-width: 480px) {
-    .projects {
-      position: relative; } }
+  margin-bottom: 20%; }
 
 .svg-container {
   display: block;
@@ -213,7 +203,7 @@ h1 {
   width: 100%; }
   h1.maintitle {
     position: absolute;
-    top: 150px; }
+    top: 250px; }
   h1 span {
     background: rgba(247, 122, 82, 0.7);
     padding: 10px;
@@ -228,12 +218,17 @@ h2 {
 
 h3 {
   text-align: center; }
-
-h3 span {
-  background: #332532;
-  /* fallback color */
-  background: rgba(51, 37, 50, 0.7);
-  padding: 5px; }
+  h3.subtitle {
+    position: absolute;
+    top: 320px;
+    width: 100%;
+    font-weight: bold; }
+  h3 span {
+    background: #332532;
+    /* fallback color */
+    background: rgba(51, 37, 50, 0.7);
+    padding: 7px;
+    color: #fff; }
 
 .loading-page {
   padding-bottom: 15em; }
@@ -250,6 +245,16 @@ p.fact {
 p span {
   background: rgba(247, 122, 82, 0.5);
   padding: 1px; }
+
+.scroll-btn {
+  margin: auto;
+  position: absolute;
+  top: 500px;
+  width: 100%; }
+
+.btn-intro {
+  display: block;
+  color: #fff; }
 
 .line {
   opacity: 0.7;
