@@ -10,39 +10,67 @@ body {
   /*footer height plus padding*/
   margin-bottom: 200px; }
 
+.social-icons {
+  position: fixed;
+  z-index: 1000; }
+
+.fa-twitter,
+.fa-facebook {
+  background-color: rgba(187, 189, 192, 0.5);
+  padding: 5px;
+  margin-top: 5px;
+  color: #5b5b5b;
+  cursor: pointer; }
+  .fa-twitter:hover,
+  .fa-facebook:hover {
+    color: #FAA61A; }
+
 a {
   color: inherit;
   text-decoration: none; }
   a:link {
     text-decoration: none; }
+  a.dotted {
+    color: #4b444d;
+    border-bottom: 1.5px dotted #ccc; }
   a:hover {
     color: #FAA61A; }
 
 h1 {
   font-size: 3.5em;
-  line-height: 0.8em;
+  line-height: 1.3em;
   font-weight: bold;
   color: #383e47;
   margin-bottom: 0.5em; }
   @media (max-width: 768px) {
     h1 {
-      font-size: 1.8em; } }
+      font-size: 2.2em; } }
 
 h2 {
   font-size: 2em;
   line-height: 2.5em;
   font-weight: bold; }
+  @media (max-width: 768px) {
+    h2 {
+      font-size: 1.8em; } }
 
 h3 {
   font-size: 1.8em;
   line-height: 2.2em;
   font-weight: normal;
   color: #fff; }
+  @media (max-width: 768px) {
+    h3 {
+      font-size: 1.5em; } }
 
 p {
   font-size: 1.5em;
   line-height: 1.9em;
   padding-bottom: 1em; }
+
+.container-fluid {
+  padding-right: 0px;
+  padding-left: 0px; }
 
 /* ======== HEADER ======== */
 .navbar {
@@ -149,34 +177,13 @@ p {
   .p2 {
     display: none; } }
 
-.container-fluid {
-  padding-right: 0px;
-  padding-left: 0px; }
-
-.image {
-  position: relative; }
-
-.social-icons {
-  position: fixed;
-  z-index: 1000; }
-
-.fa-twitter,
-.fa-facebook {
-  background-color: rgba(230, 250, 250, 0.5);
-  padding: 5px;
-  margin-top: 5px;
-  color: #5b5b5b;
-  cursor: pointer; }
-
-.fa-facebook:hover,
-.fa-twitter:hover {
-  color: #FAA61A; }
-
-#background {
-  opacity: 0.9; }
-
 .projects {
   margin-bottom: 20%; }
+  .projects h2 {
+    margin-top: 5%; }
+
+.project {
+  margin-top: 7em; }
 
 .svg-container {
   display: block;
@@ -201,9 +208,6 @@ h1 {
   text-align: center;
   left: 0;
   width: 100%; }
-  h1.maintitle {
-    position: absolute;
-    top: 250px; }
   h1 span {
     background: rgba(247, 122, 82, 0.7);
     padding: 10px;
@@ -219,9 +223,7 @@ h2 {
 h3 {
   text-align: center; }
   h3.subtitle {
-    position: absolute;
-    top: 320px;
-    width: 100%;
+    margin-top: 2em;
     font-weight: bold; }
   h3 span {
     background: #332532;
@@ -230,11 +232,8 @@ h3 {
     padding: 7px;
     color: #fff; }
 
-.loading-page {
-  padding-bottom: 15em; }
-
 p.fact {
-  margin-top: 3.5em; }
+  margin-top: 3em; }
   p.fact::first-letter {
     float: left;
     margin: 0 20px 0 0;
@@ -246,15 +245,40 @@ p span {
   background: rgba(247, 122, 82, 0.5);
   padding: 1px; }
 
-.scroll-btn {
-  margin: auto;
-  position: absolute;
-  top: 500px;
-  width: 100%; }
+header {
+  display: table;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin-bottom: 15em;
+  background: url(../img/railway_small.jpg) no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover; }
 
-.btn-intro {
+.content {
+  text-align: center;
+  line-height: 20px;
+  position: relative;
+  margin-top: 35em;
+  margin-bottom: 35em;
+  -ms-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%); }
+
+.content span {
+  font-weight: bold; }
+
+.btn {
   display: block;
-  color: #fff; }
+  margin: auto;
+  margin-top: 7em;
+  color: #f77a52; }
+
+@media (max-width: 480px) {
+  .second-btn {
+    display: none; } }
 
 .line {
   opacity: 0.7;
@@ -283,10 +307,10 @@ p span {
   font-family: 'Open Sans Condensed', sans-serif;
   color: rgba(247, 122, 82, 0.9);
   margin: 3em; }
-
-.small-graph {
-  margin-top: 5.5em;
-  padding-left: 7em; }
+  @media (max-width: 480px) {
+    .bold {
+      font-size: 1.7em;
+      margin: 1.5em; } }
 
 .last {
   margin-bottom: 10em; }
